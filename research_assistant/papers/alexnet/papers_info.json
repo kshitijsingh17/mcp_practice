@@ -1,0 +1,55 @@
+{
+  "2404.07395v1": {
+    "title": "Global versus Local: Evaluating AlexNet Architectures for Tropical Cyclone Intensity Estimation",
+    "authors": [
+      "Vikas Dwivedi"
+    ],
+    "summary": "Given the destructive impacts of tropical cyclones, it is critical to have a\nreliable system for cyclone intensity detection. Various techniques are\navailable for this purpose, each with differing levels of accuracy. In this\npaper, we introduce two ensemble-based models based on AlexNet architecture to\nestimate tropical cyclone intensity using visible satellite images. The first\nmodel, trained on the entire dataset, is called the global AlexNet model. The\nsecond model is a distributed version of AlexNet in which multiple AlexNets are\ntrained separately on subsets of the training data categorized according to the\nSaffir-Simpson wind speed scale prescribed by the meterologists. We evaluated\nthe performance of both models against a deep learning benchmark model called\n\\textit{Deepti} using a publicly available cyclone image dataset. Results\nindicate that both the global model (with a root mean square error (RMSE) of\n9.03 knots) and the distributed model (with a RMSE of 9.3 knots) outperform the\nbenchmark model (with a RMSE of 13.62 knots). We provide a thorough discussion\nof our solution approach, including an explanantion of the AlexNet's\nperformance using gradient class activation maps (grad-CAM). Our proposed\nsolution strategy allows future experimentation with various deep learning\nmodels in both single and multi-channel settings.",
+    "pdf_url": "http://arxiv.org/pdf/2404.07395v1",
+    "published": "2024-04-11"
+  },
+  "1607.05836v3": {
+    "title": "Improved Deep Learning of Object Category using Pose Information",
+    "authors": [
+      "Jiaping Zhao",
+      "Laurent Itti"
+    ],
+    "summary": "Despite significant recent progress, the best available computer vision\nalgorithms still lag far behind human capabilities, even for recognizing\nindividual discrete objects under various poses, illuminations, and\nbackgrounds. Here we present a new approach to using object pose information to\nimprove deep network learning. While existing large-scale datasets, e.g.\nImageNet, do not have pose information, we leverage the newly published\nturntable dataset, iLab-20M, which has ~22M images of 704 object instances shot\nunder different lightings, camera viewpoints and turntable rotations, to do\nmore controlled object recognition experiments. We introduce a new\nconvolutional neural network architecture, what/where CNN (2W-CNN), built on a\nlinear-chain feedforward CNN (e.g., AlexNet), augmented by hierarchical layers\nregularized by object poses. Pose information is only used as feedback signal\nduring training, in addition to category information; during test, the\nfeedforward network only predicts category. To validate the approach, we train\nboth 2W-CNN and AlexNet using a fraction of the dataset, and 2W-CNN achieves 6%\nperformance improvement in category prediction. We show mathematically that\n2W-CNN has inherent advantages over AlexNet under the stochastic gradient\ndescent (SGD) optimization procedure. Further more, we fine-tune object\nrecognition on ImageNet by using the pretrained 2W-CNN and AlexNet features on\niLab-20M, results show that significant improvements have been achieved,\ncompared with training AlexNet from scratch. Moreover, fine-tuning 2W-CNN\nfeatures performs even better than fine-tuning the pretrained AlexNet features.\nThese results show pretrained features on iLab- 20M generalizes well to natural\nimage datasets, and 2WCNN learns even better features for object recognition\nthan AlexNet.",
+    "pdf_url": "http://arxiv.org/pdf/1607.05836v3",
+    "published": "2016-07-20"
+  },
+  "1909.08774v1": {
+    "title": "Transfer Learning using CNN for Handwritten Devanagari Character Recognition",
+    "authors": [
+      "Nagender Aneja",
+      "Sandhya Aneja"
+    ],
+    "summary": "This paper presents an analysis of pre-trained models to recognize\nhandwritten Devanagari alphabets using transfer learning for Deep Convolution\nNeural Network (DCNN). This research implements AlexNet, DenseNet, Vgg, and\nInception ConvNet as a fixed feature extractor. We implemented 15 epochs for\neach of AlexNet, DenseNet 121, DenseNet 201, Vgg 11, Vgg 16, Vgg 19, and\nInception V3. Results show that Inception V3 performs better in terms of\naccuracy achieving 99% accuracy with average epoch time 16.3 minutes while\nAlexNet performs fastest with 2.2 minutes per epoch and achieving 98\\%\naccuracy.",
+    "pdf_url": "http://arxiv.org/pdf/1909.08774v1",
+    "published": "2019-09-19"
+  },
+  "2311.08655v2": {
+    "title": "Review of AlexNet for Medical Image Classification",
+    "authors": [
+      "Wenhao Tang",
+      "Junding Sun",
+      "Shuihua Wang",
+      "Yudong Zhang"
+    ],
+    "summary": "In recent years, the rapid development of deep learning has led to a wide\nrange of applications in the field of medical image classification. The\nvariants of neural network models with ever-increasing performance share some\ncommonalities: to try to mitigate overfitting, improve generalization, avoid\ngradient vanishing and exploding, etc. AlexNet first utilizes the dropout\ntechnique to mitigate overfitting and the ReLU activation function to avoid\ngradient vanishing. Therefore, we focus our discussion on AlexNet, which has\ncontributed greatly to the development of CNNs in 2012. After reviewing over 40\npapers, including journal papers and conference papers, we give a narrative on\nthe technical details, advantages, and application areas of AlexNet.",
+    "pdf_url": "http://arxiv.org/pdf/2311.08655v2",
+    "published": "2023-11-15"
+  },
+  "1412.2302v4": {
+    "title": "Theano-based Large-Scale Visual Recognition with Multiple GPUs",
+    "authors": [
+      "Weiguang Ding",
+      "Ruoyan Wang",
+      "Fei Mao",
+      "Graham Taylor"
+    ],
+    "summary": "In this report, we describe a Theano-based AlexNet (Krizhevsky et al., 2012)\nimplementation and its naive data parallelism on multiple GPUs. Our performance\non 2 GPUs is comparable with the state-of-art Caffe library (Jia et al., 2014)\nrun on 1 GPU. To the best of our knowledge, this is the first open-source\nPython-based AlexNet implementation to-date.",
+    "pdf_url": "http://arxiv.org/pdf/1412.2302v4",
+    "published": "2014-12-07"
+  }
+}
