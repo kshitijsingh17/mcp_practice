@@ -193,11 +193,16 @@ class MCP_ChatBot:
                     # Call tool via mapped session
                     session = self.tool_to_session[tool_name]
                     result = await session.call_tool(tool_name, arguments=tool_args)
-
+                    if isinstance(result.content, list):
+                        content_str = "\n".join(
+                            getattr(item, "text", str(item)) for item in result.content
+                        )
+                    else:
+                        content_str = str(result.content)
                     self.messages.append({
                         "role": "tool",
                         "tool_call_id": tool_id,
-                        "content": result.content
+                        "content": content_str
                     })
 
                 # Get next response from model after tool result
